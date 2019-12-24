@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.1)
   - Firebase/Core (5.11.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.3.0)
@@ -89,12 +90,13 @@ PODS:
   - Protobuf (3.6.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Core
   - Firebase/MLVision
   - Firebase/MLVisionTextModel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -110,8 +112,11 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - Protobuf
+  trunk:
+    - Alamofire
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseCore: d16552f06821489ce1affe2e5e3e5593402ddfe3
@@ -128,6 +133,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
-PODFILE CHECKSUM: 922055c3c5af002edf1de90ddb454ab7b55aada7
+PODFILE CHECKSUM: 67e47364c5790438a2b42edd0511569991056d6b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

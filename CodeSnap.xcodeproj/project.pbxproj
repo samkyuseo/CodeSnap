@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		9856C63623A3C43800FAC287 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856C63523A3C43800FAC287 /* EditViewController.swift */; };
 		9856C63723A3C43800FAC287 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856C63523A3C43800FAC287 /* EditViewController.swift */; };
 		9856C63823A3C43800FAC287 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856C63523A3C43800FAC287 /* EditViewController.swift */; };
+		9856C63A23AD944700FAC287 /* CodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9856C63923AD944700FAC287 /* CodeFormatter.swift */; };
 		98773C81239FA16E00CE59FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98773C80239FA16E00CE59FB /* GoogleService-Info.plist */; };
 		98773C82239FA16E00CE59FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98773C80239FA16E00CE59FB /* GoogleService-Info.plist */; };
 		98773C83239FA16E00CE59FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98773C80239FA16E00CE59FB /* GoogleService-Info.plist */; };
@@ -75,6 +76,7 @@
 		9856C62D23A3B08500FAC287 /* SavedCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCode.swift; sourceTree = "<group>"; };
 		9856C63123A3B19500FAC287 /* SavedCodeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCodeDataModel.swift; sourceTree = "<group>"; };
 		9856C63523A3C43800FAC287 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		9856C63923AD944700FAC287 /* CodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeFormatter.swift; sourceTree = "<group>"; };
 		98773C80239FA16E00CE59FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98B6D20E23A36AD40021115B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		BBB709D8E8BD5B60D4CBB936 /* Pods-CodeSnapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnapTests/Pods-CodeSnapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				9856C62D23A3B08500FAC287 /* SavedCode.swift */,
 				9856C63123A3B19500FAC287 /* SavedCodeDataModel.swift */,
+				9856C63923AD944700FAC287 /* CodeFormatter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,20 +361,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		845F4BE625EC26B4C91B7D58 /* [CP] Check Pods Manifest.lock */ = {
@@ -446,30 +444,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -484,6 +467,7 @@
 				9856C63223A3B19500FAC287 /* SavedCodeDataModel.swift in Sources */,
 				9802A8C6238653250048BF67 /* ViewController.swift in Sources */,
 				9802A8C4238653250048BF67 /* AppDelegate.swift in Sources */,
+				9856C63A23AD944700FAC287 /* CodeFormatter.swift in Sources */,
 				98B6D20F23A36AD40021115B /* AddViewController.swift in Sources */,
 				9856C63623A3C43800FAC287 /* EditViewController.swift in Sources */,
 			);

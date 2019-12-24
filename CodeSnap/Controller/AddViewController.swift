@@ -20,6 +20,8 @@ class AddViewController: UIViewController, UITextViewDelegate, UITextFieldDelega
     var unEditedCode:String?
     //Global variable for text view and text field
     var textViewField = ["view": false, "field":false]
+    //Code Formatter struct
+    var formatter:CodeFormatter = CodeFormatter()
     //Shared model
     var singleton = SavedCodeDataModel.singleton
     override func viewDidLoad() {
@@ -29,6 +31,7 @@ class AddViewController: UIViewController, UITextViewDelegate, UITextFieldDelega
         codeTextView.delegate = self
         titleTextField.delegate = self
         if let text = unEditedCode {
+            formatter.fetchUnformatted(code: text, language: "javascript")
             codeTextView.text = text
             
         }

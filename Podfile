@@ -9,7 +9,8 @@ target 'CodeSnap' do
 	pod 'Firebase/Core'
 	pod 'Firebase/MLVision'
 	pod 'Firebase/MLVisionTextModel'
-  target 'CodeSnapTests' do
+ pod 'Alamofire'
+ target 'CodeSnapTests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -7,12 +7,13 @@
 //
 
 import Foundation
-// Class containing single ton
+import Alamofire
+
+// Class containing singleton
 class SavedCodeDataModel: NSObject {
     static let singleton = SavedCodeDataModel()
     private var savedCodes = [SavedCode]()
     var filepath:String
-    
     override init() {
         //Implement data persistance 
         let manager = FileManager.default
