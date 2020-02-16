@@ -83,7 +83,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             self.navigationItem.title = "Results"
             self.processResultsButton.isEnabled = true
-            self.detectedText = resultsString
+            self.detectedText = CodeFormatter().formatCode(code: resultsString, language: "c++");
         }
     }
     

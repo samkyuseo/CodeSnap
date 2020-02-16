@@ -9,6 +9,58 @@
 import Foundation
 struct CodeFormatter {
     
+    func add_indents(formatted_string: inout String, indents: Int) -> Void {
+        for _ in 0..<indents {
+            formatted_string += "\t";
+        }
+        return
+    }
+    
+    func formatCode(code: String, language: String) -> String {
+        
+        if (code == "") {
+            return ""
+        }
+        
+        var result = ""
+        var indents = 0
+
+        var i=0
+        
+        while (i < code.count-2 ) {
+            
+            var temp_word = "";
+            while (Array(code)[i] != " " && i < code.count-2) {
+                let curr = Array(code)[i];
+                let next = Array(code)[i+1];
+                
+                if (next == "}") {
+                    indents -= 1
+                }
+                else if (curr == "{") {
+                    indents += 1
+                }
+                
+                temp_word += String(Array(code)[i]);
+                i += 1;
+            }
+            
+            print(temp_word)
+            if (Array(temp_word)[temp_word.count-1] != "\n") {
+                result += temp_word;
+                result += " ";
+            }
+            else {
+                add_indents(formatted_string: &result, indents: indents)
+            }
+            
+            i += 1;
+        }
+        result += "}"
+        print(result);
+        return result;
+    }
+    
 }
 //struct CodeFormatter {
 //    let formatterURL = "http://localhost:5000/api/format"

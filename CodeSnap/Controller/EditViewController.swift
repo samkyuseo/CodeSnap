@@ -16,6 +16,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     let singleton = SavedCodeDataModel.singleton
+   //let codeFormatter = CodeFormatter()
       
     var editIndex: Int?
     var tableView: UITableView?
@@ -30,6 +31,8 @@ class EditViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
         titleTextField.delegate = self
         if let index = editIndex {
             codeTextView.text = singleton.savedCode(at: index)?.code ?? ""
+            codeTextView.text = formatCode(code: codeTextView.text, language: "c++");
+            //codeTextView.text = "Test code \t a \t b \t c"
             titleTextField.text = singleton.savedCode(at: index)?.title ?? ""
         }
         enableSaveButton()
@@ -39,6 +42,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     //Actually change the singleton, after change is made. Update table view after doing so
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         if (saveButton.isEnabled) {
+            print("hello");
             let code = codeTextView.text ?? ""
             let title = titleTextField.text ?? ""
             print(editIndex!)
@@ -100,10 +104,56 @@ class EditViewController: UIViewController, UITextFieldDelegate, UITextViewDeleg
                
            }
            return true
-       }
+    }
       //Only enable if both are full
-      func enableSaveButton() {
+    func enableSaveButton() {
           saveButton.isEnabled = titleTextField.text != nil && codeTextView.text != nil
+    }
+    
+    func add_indents(formatted_string: inout String, indents: Int) -> Void {
+        for _ in 0..<indents {
+            formatted_string += "\t";
+        }
+        return
+    }
+    
+    func formatCode(code: String, language: String) -> String {
+        
+        if (code == "") {
+            return ""
+        }
+        
+        var result = ""
+        var indents = 0
+
+        var i=0
+        
+        while (i < code.count-2 ){
+            
+            while (Array(code)[i] == " ") {
+                i += 1
+            }
+            let curr = Array(code)[i];
+            i+=1;
+            while (Array(code)[i] == " ") {
+                i += 1
+            }
+            let next = Array(code)[i];
+            
+            if (next == "}") {
+                indents -= 1
+            }
+            else if (curr == "{") {
+                indents += 1
+            }
+            result.append(curr);
+            if (curr == "\n") {
+                add_indents(formatted_string: &result, indents: indents)
+            }
+        }
+        result += "}"
+        print(result);
+        return result;
     }
 
 }
