@@ -30,14 +30,14 @@ class AddViewController: UIViewController, UITextViewDelegate, UITextFieldDelega
         saveButton.isEnabled = false
         codeTextView.delegate = self
         titleTextField.delegate = self
-        if let text = unEditedCode {
-            formatter.fetchUnformatted(code: text, language: "javascript")
-            codeTextView.text = text
-            
-        }
-        else {
-            codeTextView.text = "Could not convert code"
-        }
+//        if let text = unEditedCode {
+//            formatter.fetchUnformatted(code: text, language: "javascript")
+        codeTextView.text = unEditedCode;
+//            
+//        }
+//        else {
+//            codeTextView.text = "Could not convert code"
+//        }
         // Do any additional setup after loading the view.
     }
     

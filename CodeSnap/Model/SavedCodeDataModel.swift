@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+//import Alamofire
 
 // Class containing singleton
 class SavedCodeDataModel: NSObject {

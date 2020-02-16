@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		758B4C74310EFAB251A25C78 /* Pods_CodeSnapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077967C3FE8E8CD4E7E642C5 /* Pods_CodeSnapUITests.framework */; };
-		936B780B5BCCB6BC4237A2C5 /* Pods_CodeSnapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F1BF837C04E97474929CDB /* Pods_CodeSnapTests.framework */; };
+		2F320005D8026EC967B1A4B7 /* Pods_CodeSnap_CodeSnapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDDB631A97F09CDE6F683AC /* Pods_CodeSnap_CodeSnapUITests.framework */; };
 		9802A8C4238653250048BF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9802A8C3238653250048BF67 /* AppDelegate.swift */; };
 		9802A8C6238653250048BF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9802A8C5238653250048BF67 /* ViewController.swift */; };
 		9802A8C9238653250048BF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9802A8C7238653250048BF67 /* Main.storyboard */; };
@@ -33,7 +32,9 @@
 		98773C82239FA16E00CE59FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98773C80239FA16E00CE59FB /* GoogleService-Info.plist */; };
 		98773C83239FA16E00CE59FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98773C80239FA16E00CE59FB /* GoogleService-Info.plist */; };
 		98B6D20F23A36AD40021115B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6D20E23A36AD40021115B /* AddViewController.swift */; };
-		EA74C4DA150EB19A8E4C3BDB /* Pods_CodeSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE95DA5270488190130067FC /* Pods_CodeSnap.framework */; };
+		98D1183E23F7BB86000CB9D3 /* Pods_CodeSnap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE95DA5270488190130067FC /* Pods_CodeSnap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C517266CE731596C8E2760F2 /* Pods_CodeSnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F89B1D12C2F2A1143DB3125 /* Pods_CodeSnap.framework */; };
+		E575A51DEA6E81C1596DEE41 /* Pods_CodeSnapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444C5EC0C93A9402E129E5C7 /* Pods_CodeSnapTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +54,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98D1183F23F7BB86000CB9D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98D1183E23F7BB86000CB9D3 /* Pods_CodeSnap.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		077967C3FE8E8CD4E7E642C5 /* Pods_CodeSnapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16890EC1D879BB6E0109858F /* Pods-CodeSnap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnap/Pods-CodeSnap.debug.xcconfig"; sourceTree = "<group>"; };
-		24F1BF837C04E97474929CDB /* Pods_CodeSnapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F89B1D12C2F2A1143DB3125 /* Pods_CodeSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5C50692813423590026BDC /* Pods-CodeSnapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnapTests/Pods-CodeSnapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		444C5EC0C93A9402E129E5C7 /* Pods_CodeSnapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDDB631A97F09CDE6F683AC /* Pods_CodeSnap_CodeSnapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnap_CodeSnapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF3899A20AA744CAF2DB80 /* Pods-CodeSnap-CodeSnapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnap-CodeSnapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E7116611E9DD19120431EA8 /* Pods-CodeSnapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnapUITests/Pods-CodeSnapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F95CEBD4F4CE7F1212F1838 /* Pods-CodeSnap-CodeSnapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnap-CodeSnapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9802A8C0238653250048BF67 /* CodeSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9802A8C3238653250048BF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9802A8C5238653250048BF67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +97,7 @@
 		9856C63923AD944700FAC287 /* CodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeFormatter.swift; sourceTree = "<group>"; };
 		98773C80239FA16E00CE59FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98B6D20E23A36AD40021115B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		98D1183923F79D9E000CB9D3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB709D8E8BD5B60D4CBB936 /* Pods-CodeSnapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnapTests/Pods-CodeSnapTests.release.xcconfig"; sourceTree = "<group>"; };
 		BFE060A0A1C2EC5B08091CEA /* Pods-CodeSnapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnapUITests/Pods-CodeSnapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D8892378C706EAF4D1B2A1A1 /* Pods-CodeSnap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnap.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnap/Pods-CodeSnap.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA74C4DA150EB19A8E4C3BDB /* Pods_CodeSnap.framework in Frameworks */,
+				C517266CE731596C8E2760F2 /* Pods_CodeSnap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936B780B5BCCB6BC4237A2C5 /* Pods_CodeSnapTests.framework in Frameworks */,
+				E575A51DEA6E81C1596DEE41 /* Pods_CodeSnapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758B4C74310EFAB251A25C78 /* Pods_CodeSnapUITests.framework in Frameworks */,
+				2F320005D8026EC967B1A4B7 /* Pods_CodeSnap_CodeSnapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +135,10 @@
 		0BBBD5999DD1DE8BAEC5B71B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE95DA5270488190130067FC /* Pods_CodeSnap.framework */,
-				24F1BF837C04E97474929CDB /* Pods_CodeSnapTests.framework */,
-				077967C3FE8E8CD4E7E642C5 /* Pods_CodeSnapUITests.framework */,
+				98D1183923F79D9E000CB9D3 /* Alamofire.framework */,
+				1F89B1D12C2F2A1143DB3125 /* Pods_CodeSnap.framework */,
+				7EDDB631A97F09CDE6F683AC /* Pods_CodeSnap_CodeSnapUITests.framework */,
+				444C5EC0C93A9402E129E5C7 /* Pods_CodeSnapTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +152,7 @@
 				9802A8C1238653250048BF67 /* Products */,
 				B4633DA878B650D9E493A5CF /* Pods */,
 				0BBBD5999DD1DE8BAEC5B71B /* Frameworks */,
+				9876326023F8BB0100C9AAFE /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +228,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9876326023F8BB0100C9AAFE /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EE95DA5270488190130067FC /* Pods_CodeSnap.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		B4633DA878B650D9E493A5CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +245,8 @@
 				BBB709D8E8BD5B60D4CBB936 /* Pods-CodeSnapTests.release.xcconfig */,
 				8E7116611E9DD19120431EA8 /* Pods-CodeSnapUITests.debug.xcconfig */,
 				BFE060A0A1C2EC5B08091CEA /* Pods-CodeSnapUITests.release.xcconfig */,
+				84EF3899A20AA744CAF2DB80 /* Pods-CodeSnap-CodeSnapUITests.debug.xcconfig */,
+				8F95CEBD4F4CE7F1212F1838 /* Pods-CodeSnap-CodeSnapUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -231,8 +262,9 @@
 				9802A8BC238653250048BF67 /* Sources */,
 				9802A8BD238653250048BF67 /* Frameworks */,
 				9802A8BE238653250048BF67 /* Resources */,
-				D7CAE25E1B5948236F5080AD /* [CP] Embed Pods Frameworks */,
 				2CC13EE4F4B8455700132320 /* [CP] Copy Pods Resources */,
+				98D1183F23F7BB86000CB9D3 /* Embed Frameworks */,
+				4AA57D1BC163C98B56F58271 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +302,8 @@
 				9802A8DB238653260048BF67 /* Sources */,
 				9802A8DC238653260048BF67 /* Frameworks */,
 				9802A8DD238653260048BF67 /* Resources */,
+				80ABA963B01EBDEF3B1DFE7C /* [CP] Copy Pods Resources */,
+				369FAA776223149AB3DF06A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +406,57 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		369FAA776223149AB3DF06A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA57D1BC163C98B56F58271 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80ABA963B01EBDEF3B1DFE7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap-CodeSnapUITests/Pods-CodeSnap-CodeSnapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		845F4BE625EC26B4C91B7D58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,28 +516,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CodeSnapUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CodeSnap-CodeSnapUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7CAE25E1B5948236F5080AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeSnap/Pods-CodeSnap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -583,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -638,7 +706,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -730,7 +798,7 @@
 		};
 		9802A8EF238653260048BF67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E7116611E9DD19120431EA8 /* Pods-CodeSnapUITests.debug.xcconfig */;
+			baseConfigurationReference = 84EF3899A20AA744CAF2DB80 /* Pods-CodeSnap-CodeSnapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,7 +818,7 @@
 		};
 		9802A8F0238653260048BF67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFE060A0A1C2EC5B08091CEA /* Pods-CodeSnapUITests.release.xcconfig */;
+			baseConfigurationReference = 8F95CEBD4F4CE7F1212F1838 /* Pods-CodeSnap-CodeSnapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

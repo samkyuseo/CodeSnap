@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import CoreML
-import Vision //Allow us to us to process images more easily
+//import CoreML
+//import Vision //Allow us to us to process images more easily
 import FirebaseMLVision
 
 
@@ -42,8 +42,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         textRecognizer = vision.onDeviceTextRecognizer()
     
         imagePicker.delegate = self  //Set image picker's delegate to the current VC
-        //imagePicker.sourceType = .photoLibrary //Brings in camera module
-        imagePicker.sourceType = .camera //Replace with this when you get a ipod
+        imagePicker.sourceType = .photoLibrary //Brings in camera module
+        //imagePicker.sourceType = .camera //Replace with this when you get a ipod
         imagePicker.allowsEditing = true //user is allowed to edit the image
         navigationItem.title = "Snap some code!"
         // Request that processes any text that is found
