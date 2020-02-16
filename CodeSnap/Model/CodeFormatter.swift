@@ -41,24 +41,34 @@ struct CodeFormatter {
                     indents += 1
                 }
                 
-                temp_word += String(Array(code)[i]);
+                if (String(Array(code)[i]) == "\n") {
+                    temp_word += "\n";
+                    temp_word += "~";
+                    break;
+                    
+                }
+                else {
+                    temp_word += String(Array(code)[i]);
+                }
+                
                 i += 1;
             }
             
-            print(temp_word)
-            if (Array(temp_word)[temp_word.count-1] != "\n") {
-                result += temp_word;
-                result += " ";
-            }
-            else {
+            result += temp_word;
+            result += " ";
+            
+           // print(String(Array(temp_word)[temp_word.count-1]));
+            if (String(Array(temp_word)[temp_word.count-1]) == "~") {
+                result = String(result.dropLast());
                 add_indents(formatted_string: &result, indents: indents)
             }
             
             i += 1;
         }
         result += "}"
-        print(result);
-        return result;
+        //print(result);
+        let trimmedString = result.replacingOccurrences(of: "~", with: "", options: .regularExpression)
+        return trimmedString;
     }
     
 }
