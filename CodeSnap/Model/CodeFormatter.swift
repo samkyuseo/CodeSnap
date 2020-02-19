@@ -65,7 +65,7 @@ struct CodeFormatter {
             
             i += 1;
         }
-        result += "}"
+        result += "\n}"
         //print(result);
         let trimmedString = result.replacingOccurrences(of: "~", with: "", options: .regularExpression)
         return trimmedString;

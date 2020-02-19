@@ -33,6 +33,7 @@ class AddViewController: UIViewController, UITextViewDelegate, UITextFieldDelega
 //        if let text = unEditedCode {
 //            formatter.fetchUnformatted(code: text, language: "javascript")
         codeTextView.text = unEditedCode;
+
 //            
 //        }
 //        else {
